@@ -1,0 +1,7 @@
+Options +ExecCGI
+RewriteEngine On
+RewriteBase /
+RewriteRule ^(media/.*)$ - [L]
+RewriteRule ^(admin_media/.*)$ - [L]
+RewriteRule ^(MamboStory/dispatch\.wsgi/.*)$ - [L]
+RewriteRule ^(.*)$ MamboStory/MamboStory/dispatch.wsgi/$1 [QSA,PT,L]
