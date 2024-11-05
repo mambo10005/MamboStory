@@ -1,0 +1,16 @@
+<!-- MamboStory/templates/news.html -->
+<!doctype html>
+<html lang="en">
+<head>
+    <title>MamboStory News</title>
+</head>
+<body>
+    <h1>MamboStory News</h1>
+
+    <ul>
+        {% for item in news %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
